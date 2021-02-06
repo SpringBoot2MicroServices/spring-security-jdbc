@@ -24,20 +24,20 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
-                .dataSource(dataSource)
-                .usersByUsernameQuery("select username, password, enabled "
+                .dataSource(dataSource);
+              /*  .usersByUsernameQuery("select username, password, enabled "
                                 +"from users "
                                 +"where username = ?")
                 .authoritiesByUsernameQuery("select username, authority "
                                 +"from authorities "
-                                +"where username = ?");
+                                +"where username = ?");*/
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.csrf().disable();
-        http.headers().frameOptions().disable();
+        http.csrf().disable();  // ADDED TO ENABLE H2 CONSOLE FROM ANY WEB BROWSER
+        http.headers().frameOptions().disable();  // ADDED TO ENABLE H2 CONSOLE FROM ANY WEB BROWSER
 
         http
                 .authorizeRequests()
