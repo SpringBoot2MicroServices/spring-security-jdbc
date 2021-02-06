@@ -3,7 +3,7 @@ In this application we will implement spring security with JDBC - by connecting 
 
 Refer this page# https://docs.spring.io/spring-security/site/docs/current/reference/html5/#features - section - User Schema
 
-<b> Excecute below sql script in the respective RDBMS DB <b>
+<b> Excecute below sql script in the respective RDBMS DB </b>
 
 
 DROP TABLE AUTHORITIES;
