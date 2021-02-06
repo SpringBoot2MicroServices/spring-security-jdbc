@@ -36,9 +36,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.csrf().disable();  // ADDED TO ENABLE H2 CONSOLE FROM ANY WEB BROWSER
+       /* http.csrf().disable();  // ADDED TO ENABLE H2 CONSOLE FROM ANY WEB BROWSER
         http.headers().frameOptions().disable();  // ADDED TO ENABLE H2 CONSOLE FROM ANY WEB BROWSER
-
+       */
         http
                 .authorizeRequests()
                 .antMatchers("/admin").hasRole("ADMIN")
