@@ -15,3 +15,6 @@ spring:
     driverClassName: org.h2.Driver
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+ 
+# TO CONNECT H2 CONSOLE refer below
+# http://localhost:3031/my-security-service/h2-console/
