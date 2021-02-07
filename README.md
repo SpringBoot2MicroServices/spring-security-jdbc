@@ -3,7 +3,7 @@ In this application we will implement spring security with JDBC - by connecting 
 
 Refer this page# https://docs.spring.io/spring-security/site/docs/current/reference/html5/#features - section - User Schema
 
-<b> <i> This Application implemented with default tables structures - As spring expects </i></b> 
+<b> <i> This Application implemented with default tables structures - As spring expects </i></b> </br></br>
 <b> Excecute below sql script in the respective RDBMS DB </b>
 
 
